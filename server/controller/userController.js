@@ -1,5 +1,4 @@
 // db connection
-
 const dbConnection = require("../db/dbConfig");
 
 const bcrypt = require("bcrypt");
@@ -76,11 +75,12 @@ async function login(req, res) {
         .status(StatusCodes.BAD_REQUEST)
         .json({ msg: "invalid credentials" });
     }
+    // return res.json({ user: user[0].password })
 
     const username = user[0].username;
     const userid = user[0].userid;
     const token = jwt.sign({ username, userid }, process.env.JWT_SECRET, {
-      expiresIn: "1d",
+      expiresIn: "30days",
     });
 
     return res
@@ -100,8 +100,8 @@ async function checkUser(req, res) {
   const username = req.user.username;
   const userid = req.user.userid;
 
-  res.status(StatusCodes.OK).json({ msg: "valid user", username, userid });
   // res.send("check user");
+  res.status(StatusCodes.OK).json({ msg: "valid user", username, userid });
 }
 
 module.exports = { register, login, checkUser };
