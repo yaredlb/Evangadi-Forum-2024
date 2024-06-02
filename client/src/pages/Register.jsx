@@ -1,6 +1,7 @@
 import { useRef } from "react";
 import axios from "../axiosConfig";
 import { Link, useNavigate } from "react-router-dom";
+import NavBar from "../Components/NavBar/NavBar";
 
 const Register = () => {
   const navigate = useNavigate();
@@ -43,6 +44,7 @@ const Register = () => {
 
   return (
     <section>
+      <NavBar />
       <form onSubmit={handleSubmit}>
         <div>
           <span>Username :--- </span>

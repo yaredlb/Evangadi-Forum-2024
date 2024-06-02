@@ -16,7 +16,7 @@ function App() {
     try {
       const { data } = await axios.get("/users/check", {
         headers: {
-          Authorization: "Bearer" + token,
+          Authorization: "Bearer " + token,
         },
       });
 

@@ -1,0 +1,32 @@
+.nav{
+    display: flex;
+    justify-content: space-around;
+    width: 80%;
+    align-items: center;
+}
+
+.nav-right ul{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 10px;
+}
+.nav-right ul li{
+    text-decoration: none;
+    list-style: none;
+}
+.nav-right ul li a{
+    text-decoration: none;
+    list-style: none;
+    color: #111;
+}
+.nav-right-logout{
+    border: 2px solid mediumslateblue;
+    background: mediumslateblue;
+    color: white;
+    padding: 10px 40px;
+    font-size: 11px;
+}
+.nav-right-logout a{
+    color: white;
+}

@@ -1,0 +1,24 @@
+.login{
+    width: 80%;
+    display: flex;
+    justify-content: center;
+    /* align-items: center; */
+
+}
+.login-left{
+    
+}
+.login-left button{
+    border: 2px solid #ff8500;
+    background: #ff8500;
+    color: white;
+    padding: 0 30px;
+    font-size: 11px;
+}
+.right-how {
+    border: 2px solid #ff8500;
+    background: #ff8500;
+    color: white;
+    padding: 0 30px;
+    font-size: 20px;
+}
