@@ -1,5 +1,6 @@
 const { StatusCodes } = require("http-status-codes");
 const jwt = require("jsonwebtoken");
+require("dotenv").config();
 
 async function authMiddleware(req, res, next) {
   const authHeader = req.headers.authorization;
@@ -8,7 +9,7 @@ async function authMiddleware(req, res, next) {
   if (!authHeader || !authHeader.startsWith("Bearer")) {
     return res
       .status(StatusCodes.UNAUTHORIZED)
-      .json({ msg: "Authentication invalid" });
+      .json({ msg: "Authentication invalid-1" });
   }
 
   const token = authHeader.split(" ")[1];
@@ -23,7 +24,7 @@ async function authMiddleware(req, res, next) {
   } catch (error) {
     return res
       .status(StatusCodes.UNAUTHORIZED)
-      .json({ msg: "Authentication invalid" });
+      .json({ msg: "Authentication invalid-2" });
   }
 }
 
