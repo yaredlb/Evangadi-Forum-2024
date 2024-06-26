@@ -1,0 +1,43 @@
+.footer-wrapper{
+    min-width: 500px;
+	background-color: #3b455a;
+	padding-left: 30px;
+}
+.logo{
+    padding-top: 40px;
+}
+.icons{
+    width: 400px;
+	padding-top: 10px;
+}
+.icons a{
+    margin-right: 40px;
+	color: white;
+}
+.title{
+    padding-top: 35px;
+    color: white;
+}
+.useful-link{
+    border: 1px solid #3b455a;
+}
+.useful-link > a{
+    display: flex;
+	flex-direction: column;
+	color: rgba(213, 213, 213, 0.6);
+	text-decoration: none;
+	margin-bottom: 10px;
+}
+.useful-link > a:hover{
+    text-decoration: underline;
+	color: white;
+	transition: all 0.4s ease;
+}
+.contact-info{
+    padding-bottom: 50px;
+}
+.contact-info > p{
+    display: flex;
+    flex-direction: column;
+    color: rgba(213, 213, 213, 0.6);
+}

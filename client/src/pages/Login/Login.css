@@ -1,24 +1,121 @@
-.login{
-    width: 80%;
-    display: flex;
-    justify-content: center;
-    /* align-items: center; */
+/* Login.css */
+.bgd {
+  background-image: url("../../assets/bg-svg-f.svg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+.authfy-login {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 110vh;
+  background-color: #f0f0f0;
+}
 
+.panel-login {
+  width: 100% !important;
+  max-width: 500px !important;
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
-.login-left{
-    
+
+.authfy-heading {
+  margin-bottom: 20px;
 }
-.login-left button{
-    border: 2px solid #ff8500;
-    background: #ff8500;
-    color: white;
-    padding: 0 30px;
-    font-size: 11px;
+
+.auth-title {
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 10px;
 }
-.right-how {
-    border: 2px solid #ff8500;
-    background: #ff8500;
-    color: white;
-    padding: 0 30px;
-    font-size: 20px;
+
+.form-group {
+  margin-bottom: 15px;
+}
+
+.custom-login-input {
+  width: 100%;
+  padding: 10px;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.custom-password-input-wrapper {
+  position: relative;
+}
+
+.custom-password-toggle {
+  cursor: pointer;
+}
+
+.info {
+  margin-top: 20px;
+}
+.link-account {
+  color: #fe8303;
+}
+.about {
+  display: block;
+  font-size: 14px;
+  color: #fe8303;
+}
+
+.title-gradient {
+  font-size: 24px;
+  font-weight: bold;
+  margin-top: 10px;
+  margin-bottom: 15px;
+  background-clip: text;
+  background: linear-gradient(310deg, #000000, #e33f00);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.evangadi {
+  font-size: 45px;
+  font-weight: 600;
+  color: #4b456f;
+  line-height: 56px;
+}
+.font-p {
+  color: #656565;
+  font-size: 15px;
+  line-height: 28px;
+  margin-bottom: 20px;
+}
+
+.btn-blue {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: #fe8303;
+  color: #fff;
+  text-decoration: none;
+  border-radius: 4px;
+  transition: background-color 0.3s ease;
+}
+
+.btn-blue:hover {
+  background-color: #fe8303;
+}
+
+.lnk-toggler {
+  color: #fe8303 !important;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .custom-login-input {
+    width: 100%;
+  }
+}
+
+@media (max-width: 576px) {
+  .panel-login {
+    padding: 15px;
+  }
 }
