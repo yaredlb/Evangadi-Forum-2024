@@ -1,0 +1,145 @@
+/* Register.css */
+/* Section Background */
+.reg-background {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  min-height: 120vh;
+  background: url("../../assets/bg-svg-f.svg") no-repeat center center
+    fixed;
+  background-size: cover;
+  padding: 20px;
+}
+
+/* Form Container */
+.authfy-panel {
+  background-color: rgba(255, 255, 255, 0.9);
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  width: 100%;
+  max-width: 400px !important;
+}
+
+.authfy-heading {
+  margin-bottom: 20px;
+}
+
+.auth-title {
+  font-size: 24px;
+  font-weight: bold;
+  color: #333;
+}
+
+.lnk-toggler {
+  color: #fe8303;
+  text-decoration: none;
+}
+
+.lnk-toggler:hover {
+  text-decoration: underline;
+}
+
+/* Input Fields */
+.wrap-input,
+.login-input-password {
+  position: relative;
+}
+
+.login-input {
+  width: 100%;
+  padding: 10px;
+  font-size: 16px;
+  border: 1px solid #ced4da;
+  border-radius: 4px;
+  transition: border-color 0.3s;
+}
+
+.login-input:focus {
+  border-color: #80bdff;
+  outline: none;
+}
+
+.icon-pass {
+  position: absolute;
+  top: 50%;
+  right: 10px;
+  transform: translateY(-50%);
+  cursor: pointer;
+  color: #666;
+}
+
+/* Button */
+.login-btn {
+  width: 100%;
+  padding: 10px;
+  font-size: 18px;
+  font-weight: bold;
+  color: #fff;
+  background-color: #007bff;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.login-btn:hover {
+  background-color: #0056b3;
+}
+
+/* Info Section */
+.info {
+  text-align: center;
+  margin-top: 20px;
+  max-width: 600px;
+}
+
+.about {
+  display: block;
+  font-size: 14px;
+  color: #fe8303;
+}
+.evangadi {
+  font-size: 45px;
+  font-weight: 600;
+  color: #4b456f;
+  line-height: 56px;
+}
+.title-gradient {
+  font-size: 24px;
+  font-weight: bold;
+  margin-top: 10px;
+  margin-bottom: 15px;
+  background-clip: text;
+  background: linear-gradient(310deg, #000000, #e33f00);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.font-p {
+  color: #656565;
+  font-size: 15px;
+  line-height: 28px;
+  margin-bottom: 20px;
+}
+
+.mg-bt-30 {
+  margin-bottom: 30px;
+}
+
+.btn-blue {
+  padding: 10px 20px;
+  font-size: 16px;
+  color: #fff;
+  background-color: #fe8303;
+  border: none;
+  border-radius: 4px;
+  text-decoration: none;
+  display: inline-block;
+  transition: background-color 0.3s;
+}
+
+.btn-blue:hover {
+  background-color: #fe8303;
+}

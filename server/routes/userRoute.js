@@ -11,10 +11,10 @@ const { register, login, checkUser } = require("../controller/userController");
 // register route
 router.post("/register", register);
 
-// login user
+// login user route
 router.post("/login", login);
 
-// check user
+// check user route
 // router.get("/check", checkUser);
 router.get("/check", authMiddleware, checkUser);
 
